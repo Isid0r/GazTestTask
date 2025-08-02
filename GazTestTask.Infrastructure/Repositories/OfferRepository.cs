@@ -11,14 +11,18 @@ namespace GazTestTask.Infrastructure.Repositories
         {
         }
 
-        public async Task<IEnumerable<Offer>> SearchAsync(string query)
+        public async Task<IEnumerable<Offer>> SearchAsync(string? search = null)
         {
-            return await _dbSet
-                .Include(o => o.Supplier)
-                .Where(o => o.Brand.Contains(query) || 
-                           o.Model.Contains(query) || 
-                           o.Supplier.Name.Contains(query))
-                .ToListAsync();
+            var query = _dbSet.Include(o => o.Supplier).AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                query = query.Where(o => o.Brand.Contains(search) || 
+                                       o.Model.Contains(search) || 
+                                       o.Supplier.Name.Contains(search));
+            }
+
+            return await query.ToListAsync();
         }
     }
 }

@@ -47,5 +47,10 @@ namespace GazTestTask.Infrastructure.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
+        public virtual async Task<int> GetTotalCountAsync()
+        {
+            return await _dbSet.CountAsync();
+        }
     }
 } 

@@ -4,6 +4,6 @@ namespace GazTestTask.Domain.Interfaces.Repositories
 {
     public interface IOfferRepository: IRepository<Offer>
     {
-        Task<IEnumerable<Offer>> SearchAsync(string query);
+        Task<IEnumerable<Offer>> SearchAsync(string? search = null);
     }
 }

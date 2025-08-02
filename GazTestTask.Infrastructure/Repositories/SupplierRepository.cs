@@ -14,7 +14,8 @@ namespace GazTestTask.Infrastructure.Repositories
         public async Task<IEnumerable<Supplier>> GetTopSuppliersAsync(int count)
         {
             return await _dbSet
-                .OrderByDescending(s => s.CreatedDate)
+                .Include(s => s.Offers)
+                .OrderByDescending(s => s.Offers.Count)
                 .Take(count)
                 .ToListAsync();
         }
