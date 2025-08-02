@@ -1,5 +1,5 @@
-﻿using GazTestTask.Domain.DTOs.Common;
-using GazTestTask.Domain.DTOs.Offers;
+﻿using GazTestTask.Application.DTOs.Common;
+using GazTestTask.Application.DTOs.Offers;
 
 namespace GazTestTask.Domain.Interfaces.Services
 {

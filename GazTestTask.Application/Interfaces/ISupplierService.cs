@@ -1,4 +1,4 @@
-﻿using GazTestTask.Domain.DTOs.Suppliers;
+﻿using GazTestTask.Application.DTOs.Suppliers;
 
 namespace GazTestTask.Domain.Interfaces.Services
 {

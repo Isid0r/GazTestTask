@@ -1,4 +1,4 @@
-namespace GazTestTask.Domain.DTOs.Suppliers
+namespace GazTestTask.Application.DTOs.Suppliers
 {
     public class PopularSupplierDto
     {

@@ -1,4 +1,4 @@
-namespace GazTestTask.Domain.DTOs.Offers
+namespace GazTestTask.Application.DTOs.Offers
 {
     public class CreateOfferDto
     {

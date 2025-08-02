@@ -1,4 +1,4 @@
-namespace GazTestTask.Domain.DTOs.Common
+namespace GazTestTask.Application.DTOs.Common
 {
     public class SearchResultDto<T>
     {

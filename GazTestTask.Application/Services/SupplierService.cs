@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using GazTestTask.Domain.DTOs.Suppliers;
+using GazTestTask.Application.DTOs.Suppliers;
 using GazTestTask.Domain.Interfaces.Repositories;
 using GazTestTask.Domain.Interfaces.Services;
 

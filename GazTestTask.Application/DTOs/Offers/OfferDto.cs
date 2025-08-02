@@ -1,6 +1,6 @@
-using GazTestTask.Domain.DTOs.Suppliers;
+using GazTestTask.Application.DTOs.Suppliers;
 
-namespace GazTestTask.Domain.DTOs.Offers
+namespace GazTestTask.Application.DTOs.Offers
 {
     public class OfferDto
     {

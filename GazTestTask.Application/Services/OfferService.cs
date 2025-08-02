@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using GazTestTask.Domain.DTOs.Offers;
-using GazTestTask.Domain.DTOs.Common;
+using GazTestTask.Application.DTOs.Common;
+using GazTestTask.Application.DTOs.Offers;
 using GazTestTask.Domain.Entities;
 using GazTestTask.Domain.Interfaces.Repositories;
 using GazTestTask.Domain.Interfaces.Services;
