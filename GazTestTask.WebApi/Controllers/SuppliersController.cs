@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using GazTestTask.Application.Services;
 using GazTestTask.Domain.DTOs.Suppliers;
+using GazTestTask.Domain.Interfaces.Services;
 
 namespace GazTestTask.WebApi.Controllers
 {
@@ -8,9 +8,9 @@ namespace GazTestTask.WebApi.Controllers
     [Route("api/[controller]")]
     public class SuppliersController : ControllerBase
     {
-        private readonly SupplierService _supplierService;
+        private readonly ISupplierService _supplierService;
 
-        public SuppliersController(SupplierService supplierService)
+        public SuppliersController(ISupplierService supplierService)
         {
             _supplierService = supplierService;
         }

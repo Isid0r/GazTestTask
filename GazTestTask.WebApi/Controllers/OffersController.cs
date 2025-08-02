@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using GazTestTask.Application.Services;
 using GazTestTask.Domain.DTOs.Offers;
 using GazTestTask.Domain.DTOs.Common;
+using GazTestTask.Domain.Interfaces.Services;
 
 namespace GazTestTask.WebApi.Controllers
 {
@@ -9,9 +9,9 @@ namespace GazTestTask.WebApi.Controllers
     [Route("api/[controller]")]
     public class OffersController : ControllerBase
     {
-        private readonly OfferService _offerService;
+        private readonly IOfferService _offerService;
 
-        public OffersController(OfferService offerService)
+        public OffersController(IOfferService offerService)
         {
             _offerService = offerService;
         }

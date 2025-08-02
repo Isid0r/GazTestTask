@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
 using GazTestTask.Domain.DTOs.Suppliers;
 using GazTestTask.Domain.Interfaces.Repositories;
+using GazTestTask.Domain.Interfaces.Services;
 
 namespace GazTestTask.Application.Services
 {
-    public class SupplierService
+    public class SupplierService: ISupplierService
     {
         private readonly ISupplierRepository _supplierRepository;
         private readonly IMapper _mapper;

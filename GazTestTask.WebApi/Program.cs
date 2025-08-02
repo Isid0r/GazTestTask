@@ -4,6 +4,7 @@ using GazTestTask.Infrastructure.Repositories;
 using GazTestTask.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using GazTestTask.Application.Mapping;
+using GazTestTask.Domain.Interfaces.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,8 +21,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IOfferRepository, OfferRepository>();
 builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 
-builder.Services.AddScoped<OfferService>();
-builder.Services.AddScoped<SupplierService>();
+builder.Services.AddScoped<IOfferService, OfferService>();
+builder.Services.AddScoped<ISupplierService, SupplierService>();
 
 builder.Services.AddAutoMapper(cfg => {}, typeof(MappingProfile));
 

@@ -3,10 +3,11 @@ using GazTestTask.Domain.DTOs.Offers;
 using GazTestTask.Domain.DTOs.Common;
 using GazTestTask.Domain.Entities;
 using GazTestTask.Domain.Interfaces.Repositories;
+using GazTestTask.Domain.Interfaces.Services;
 
 namespace GazTestTask.Application.Services
 {
-    public class OfferService
+    public class OfferService: IOfferService
     {
         private readonly IOfferRepository _offerRepository;
         private readonly ISupplierRepository _supplierRepository;
