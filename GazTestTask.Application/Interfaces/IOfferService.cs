@@ -1,7 +1,7 @@
 ﻿using GazTestTask.Application.DTOs.Common;
 using GazTestTask.Application.DTOs.Offers;
 
-namespace GazTestTask.Domain.Interfaces.Services
+namespace GazTestTask.Application.Interfaces.Services
 {
     public interface IOfferService
     {

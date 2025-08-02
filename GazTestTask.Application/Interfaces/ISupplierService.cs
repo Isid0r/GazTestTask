@@ -1,6 +1,6 @@
 ﻿using GazTestTask.Application.DTOs.Suppliers;
 
-namespace GazTestTask.Domain.Interfaces.Services
+namespace GazTestTask.Application.Interfaces.Services
 {
     public interface ISupplierService
     {

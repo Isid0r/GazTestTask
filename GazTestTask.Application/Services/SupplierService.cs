@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using GazTestTask.Application.DTOs.Suppliers;
+using GazTestTask.Application.Interfaces.Services;
 using GazTestTask.Domain.Interfaces.Repositories;
-using GazTestTask.Domain.Interfaces.Services;
 
 namespace GazTestTask.Application.Services
 {

@@ -4,7 +4,7 @@ using GazTestTask.Infrastructure.Repositories;
 using GazTestTask.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using GazTestTask.Application.Mapping;
-using GazTestTask.Domain.Interfaces.Services;
+using GazTestTask.Application.Interfaces.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

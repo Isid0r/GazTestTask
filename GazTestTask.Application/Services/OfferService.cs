@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
 using GazTestTask.Application.DTOs.Common;
 using GazTestTask.Application.DTOs.Offers;
+using GazTestTask.Application.Interfaces.Services;
 using GazTestTask.Domain.Entities;
 using GazTestTask.Domain.Interfaces.Repositories;
-using GazTestTask.Domain.Interfaces.Services;
+
 
 namespace GazTestTask.Application.Services
 {

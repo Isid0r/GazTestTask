@@ -1,5 +1,3 @@
-using System;
-
 namespace GazTestTask.Application.DTOs.Suppliers
 {
     public class SupplierDto
