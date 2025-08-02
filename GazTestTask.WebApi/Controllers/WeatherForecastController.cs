@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace GazTestTask.Controllers
+namespace GazTestTask.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

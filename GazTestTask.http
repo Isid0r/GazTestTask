@@ -1,6 +1,0 @@
-@GazTestTask_HostAddress = http://localhost:5178
-
-GET {{GazTestTask_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

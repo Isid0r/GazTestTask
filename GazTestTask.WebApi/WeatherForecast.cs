@@ -1,4 +1,4 @@
-namespace GazTestTask
+namespace GazTestTask.WebApi
 {
     public class WeatherForecast
     {
