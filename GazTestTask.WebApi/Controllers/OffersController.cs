@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using GazTestTask.Domain.DTOs.Offers;
-using GazTestTask.Domain.DTOs.Common;
 using GazTestTask.Domain.Interfaces.Services;
+using GazTestTask.Application.DTOs.Common;
+using GazTestTask.Application.DTOs.Offers;
 
 namespace GazTestTask.WebApi.Controllers
 {

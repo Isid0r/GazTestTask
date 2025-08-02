@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using GazTestTask.Domain.DTOs.Suppliers;
 using GazTestTask.Domain.Interfaces.Services;
+using GazTestTask.Application.DTOs.Suppliers;
 
 namespace GazTestTask.WebApi.Controllers
 {
