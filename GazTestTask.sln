@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazTestTask.Domain", "GazTestTask.Domain\GazTestTask.Domain.csproj", "{E4B62F4E-EF0A-4F11-BB55-45DB1CBF351B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GazTestTask.Domain", "GazTestTask.Domain\GazTestTask.Domain.csproj", "{E4B62F4E-EF0A-4F11-BB55-45DB1CBF351B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazTestTask.WebApi", "GazTestTask.WebApi\GazTestTask.WebApi.csproj", "{8DB40120-79E8-4FD7-A544-B786353296D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GazTestTask.WebApi", "GazTestTask.WebApi\GazTestTask.WebApi.csproj", "{8DB40120-79E8-4FD7-A544-B786353296D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazTestTask.Application", "GazTestTask.Application\GazTestTask.Application.csproj", "{7DA58CE8-54D9-46CF-B803-95DE701EC1FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GazTestTask.Application", "GazTestTask.Application\GazTestTask.Application.csproj", "{7DA58CE8-54D9-46CF-B803-95DE701EC1FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazTestTask.Infrastructure", "..\GazTestTask.Infrastructure\GazTestTask.Infrastructure.csproj", "{716F1106-A670-4CB6-AD83-98D20BF0E7A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GazTestTask.Infrastructure", "GazTestTask.Infrastructure\GazTestTask.Infrastructure.csproj", "{F7F76AE9-581D-4CD8-8D15-2D6AF48FCF1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{7DA58CE8-54D9-46CF-B803-95DE701EC1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DA58CE8-54D9-46CF-B803-95DE701EC1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DA58CE8-54D9-46CF-B803-95DE701EC1FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{716F1106-A670-4CB6-AD83-98D20BF0E7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{716F1106-A670-4CB6-AD83-98D20BF0E7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{716F1106-A670-4CB6-AD83-98D20BF0E7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{716F1106-A670-4CB6-AD83-98D20BF0E7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F76AE9-581D-4CD8-8D15-2D6AF48FCF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F76AE9-581D-4CD8-8D15-2D6AF48FCF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F76AE9-581D-4CD8-8D15-2D6AF48FCF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F76AE9-581D-4CD8-8D15-2D6AF48FCF1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
