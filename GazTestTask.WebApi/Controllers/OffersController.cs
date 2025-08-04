@@ -10,10 +10,12 @@ namespace GazTestTask.WebApi.Controllers
     public class OffersController : ControllerBase
     {
         private readonly IOfferService _offerService;
+        private readonly ILogger<OffersController> _logger;
 
-        public OffersController(IOfferService offerService)
+        public OffersController(IOfferService offerService, ILogger<OffersController> logger)
         {
             _offerService = offerService;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -26,15 +28,29 @@ namespace GazTestTask.WebApi.Controllers
             }
             catch (ArgumentException ex)
             {
+                _logger.LogWarning(ex, "Ошибка при создании предложения");
                 return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Неожиданная ошибка при создании предложения");
+                return StatusCode(500);
             }
         }
 
         [HttpGet("search")]
         public async Task<ActionResult<SearchResultDto<OfferDto>>> SearchOffers([FromQuery] string? search = null)
         {
-            var result = await _offerService.SearchOffersAsync(search);
-            return Ok(result);
+            try
+            {
+                var result = await _offerService.SearchOffersAsync(search);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при поиске предложений");
+                return StatusCode(500);
+            }
         }
     }
 } 

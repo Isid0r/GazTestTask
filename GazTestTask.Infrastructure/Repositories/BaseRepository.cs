@@ -5,7 +5,7 @@ using GazTestTask.Infrastructure.Data;
 
 namespace GazTestTask.Infrastructure.Repositories
 {
-    public class BaseRepository<T> : IRepository<T> where T : BaseEntity
+    public abstract class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
         protected readonly AppDbContext _context;
         protected readonly DbSet<T> _dbSet;

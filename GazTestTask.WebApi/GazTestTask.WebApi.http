@@ -1,6 +1,0 @@
-@GazTestTask.WebApi_HostAddress = http://localhost:5230
-
-GET {{GazTestTask.WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -9,17 +9,27 @@ namespace GazTestTask.WebApi.Controllers
     public class SuppliersController : ControllerBase
     {
         private readonly ISupplierService _supplierService;
+        private readonly ILogger<SuppliersController> _logger;
 
-        public SuppliersController(ISupplierService supplierService)
+        public SuppliersController(ISupplierService supplierService, ILogger<SuppliersController> logger)
         {
             _supplierService = supplierService;
+            _logger = logger;
         }
 
         [HttpGet("popular")]
         public async Task<ActionResult<IEnumerable<PopularSupplierDto>>> GetPopularSuppliers()
         {
-            var result = await _supplierService.GetPopularSuppliersAsync();
-            return Ok(result);
+            try
+            {
+                var result = await _supplierService.GetPopularSuppliersAsync();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Ошибка при получении популярных поставщиков");
+                return StatusCode(500);
+            }
         }
     }
 } 
