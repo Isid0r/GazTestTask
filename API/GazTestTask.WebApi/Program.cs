@@ -5,13 +5,17 @@ using GazTestTask.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using GazTestTask.Application.Mapping;
 using GazTestTask.Application.Interfaces.Services;
+using GazTestTask.WebApi.Filters;
 using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<GlobalExceptionFilter>();
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
